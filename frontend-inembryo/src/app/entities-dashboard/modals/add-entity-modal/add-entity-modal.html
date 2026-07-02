@@ -1,0 +1,53 @@
+<h2 mat-dialog-title>AGGIUNGI/MODIFICA ISTITUZIONE</h2>
+
+<mat-dialog-content [formGroup]="entityForm">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>NOME ISTITUZIONE SCOLASTICA</mat-label>
+    <input matInput formControlName="nome_istituzione">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>PROVINCIA</mat-label>
+    <input matInput formControlName="provincia">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+  <mat-label>TIPO (statale/paritaria)</mat-label>
+  <input matInput formControlName="tipo">
+</mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>EMAIL ISTITUZIONALE</mat-label>
+    <input matInput formControlName="email_istituzionale">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>PEC</mat-label>
+    <input matInput formControlName="pec">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>SITO WEB</mat-label>
+    <input matInput formControlName="sito_web">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>LINKEDIN</mat-label>
+    <input matInput formControlName="linkedin">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>SOCIAL</mat-label>
+    <input matInput formControlName="social">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>NUMERO TELEFONO</mat-label>
+    <input matInput formControlName="numero_telefono">
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">ANNULLA</button>
+  <button mat-raised-button color="primary" (click)="onSave()">SALVA</button>
+</mat-dialog-actions>
